@@ -34,7 +34,7 @@ cd ~/comfyui-docker
 echo "📝 Writing Dockerfile..."
 
 cat > Dockerfile <<EOF
-FROM nvidia/cuda:12.2.0-runtime-ubuntu22.04
+FROM nvidia/cuda:12.2.0-devel-ubuntu22.04
 
 RUN groupadd -g 1000 comfy && useradd -u 1000 -g comfy -m comfy
 
